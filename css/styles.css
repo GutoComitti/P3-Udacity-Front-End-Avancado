@@ -104,7 +104,7 @@ nav h1 a {
 }
 /* ====================== Map ====================== */
 #map {
-  height: 200px;
+  height: 300px;
   width: 100%;
   background-color: #ccc;
 }
@@ -149,16 +149,15 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 0 5% 25px;
   text-align: left;
-  width: 270px;
+  width: 89%;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
   min-width: 100%;
 }
 #restaurants-list li h1 {
