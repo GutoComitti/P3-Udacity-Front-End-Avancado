@@ -145,14 +145,47 @@ nav h1 a {
   flex-wrap: wrap;
   display: flex;
 }
-#restaurants-list li {
-  @media (min-width:1025px){
-    width: 37%;
+
+@media (min-width: 1068px){
+  #restaurants-list li {
+    width: 20%;
+/*    background-color: #fff;
+    border: 2px solid #ccc;
+    font-family: Arial,sans-serif;
+    margin: 15px;
+    min-height: 380px;
+    padding: 0 5% 25px;
+    text-align: left;*/
   }
-  @media (max-width: 1024px) {
+}
+
+/*@media (min-width: 1025px) and (max-width: 1067px){
+  #restaurants-list li {
+    width: 36%;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    font-family: Arial,sans-serif;
+    margin: 15px;
+    min-height: 380px;
+    padding: 0 5% 25px;
+    text-align: left;
+  }
+}*/
+@media (max-width: 1024px) {
+  #restaurants-list li {
     width: 89%;
+/*    background-color: #fff;
+    border: 2px solid #ccc;
+    font-family: Arial,sans-serif;
+    margin: 15px;
+    min-height: 380px;
+    padding: 0 5% 25px;
+    text-align: left;*/
   }
-  background-color: #0000FF;
+}
+
+#restaurants-list li {
+  background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
   margin: 15px;
@@ -202,13 +235,15 @@ nav h1 a {
   z-index: 1000;
 }
 .inside #map-container {
+
   height: 50%;
-  position: relative;
+  position: absolute;
   /*right: 0;
   top: 80px;*/
   padding-left: 5%;
   width: 90%;
 }
+
 .inside #map {
   height: 300px;
   background-color: #ccc;
@@ -260,9 +295,41 @@ nav h1 a {
   padding-left: 5%;
 }
 
-#reviews-container {
-  padding: 30px 0 80px;
+/*//VER QUAL É O TAMANHO DA MIDIA, e SÓ PRA ESSA MÍDIA! FAZER:
+Colocar o Padding-left como 50% do rest-cont e do rev-cont;
+colocar o maincontent como o wrap sei lá o que (ver no site)
+colocar o mapa como position absolute
+colocar o height e width do mapa corretos*/
+@media(min-width: 700px){
+  #restaurant-container{
+    padding-left: 50%;
+  }
+  #maincontent{
+    flex-wrap: wrap;
+    display: flex;
+  }
+  /*.inside #map-container{*/
+  .inside #map{
+    /*margin-left: 15%;*/
+    height: 100%;
+    width: 45%;
+    margin-top: 3%;
+  }
+  .inside #map-container{
+    height: 45%;
+    position: absolute;
+  }
 }
+
+@media (max-width: 699px){
+  #reviews-container {
+    padding: 30px 0 80px;
+  }
+  #restaurant-container{
+    padding-top: 50%;
+  }
+}
+
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
