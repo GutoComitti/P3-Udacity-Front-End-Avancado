@@ -70,8 +70,6 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-  /*Ver como arrumar o padding => tem que deixar responsivo, 
-  ou seja, correto tanto na versão desktop quanto mobile*/
     padding: 10px 40px 16px;
     list-style: none;
     background-color: #eee;
@@ -146,41 +144,18 @@ nav h1 a {
   display: flex;
 }
 
+/*Ajustes na tela principal, medias para desktop e para mobile!
+TODO: Confirmar qual é a media padrão pra ambos os casos!*/
+
 @media (min-width: 1068px){
   #restaurants-list li {
     width: 20%;
-/*    background-color: #fff;
-    border: 2px solid #ccc;
-    font-family: Arial,sans-serif;
-    margin: 15px;
-    min-height: 380px;
-    padding: 0 5% 25px;
-    text-align: left;*/
   }
 }
 
-/*@media (min-width: 1025px) and (max-width: 1067px){
-  #restaurants-list li {
-    width: 36%;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    font-family: Arial,sans-serif;
-    margin: 15px;
-    min-height: 380px;
-    padding: 0 5% 25px;
-    text-align: left;
-  }
-}*/
 @media (max-width: 1024px) {
   #restaurants-list li {
     width: 89%;
-/*    background-color: #fff;
-    border: 2px solid #ccc;
-    font-family: Arial,sans-serif;
-    margin: 15px;
-    min-height: 380px;
-    padding: 0 5% 25px;
-    text-align: left;*/
   }
 }
 
@@ -238,8 +213,6 @@ nav h1 a {
 
   height: 50%;
   position: absolute;
-  /*right: 0;
-  top: 80px;*/
   padding-left: 5%;
   width: 90%;
 }
@@ -295,11 +268,8 @@ nav h1 a {
   padding-left: 5%;
 }
 
-/*//VER QUAL É O TAMANHO DA MIDIA, e SÓ PRA ESSA MÍDIA! FAZER:
-Colocar o Padding-left como 50% do rest-cont e do rev-cont;
-colocar o maincontent como o wrap sei lá o que (ver no site)
-colocar o mapa como position absolute
-colocar o height e width do mapa corretos*/
+/*Ajustes para alterar o lay-out para desktop*/
+/*TODO: Confirmar qual é a media padrão pra se usar quando é somente pra desktops!*/
 @media(min-width: 700px){
   #restaurant-container{
     padding-left: 50%;
@@ -308,9 +278,7 @@ colocar o height e width do mapa corretos*/
     flex-wrap: wrap;
     display: flex;
   }
-  /*.inside #map-container{*/
   .inside #map{
-    /*margin-left: 15%;*/
     height: 100%;
     width: 45%;
     margin-top: 3%;
@@ -320,6 +288,9 @@ colocar o height e width do mapa corretos*/
     position: absolute;
   }
 }
+
+/*Ajustes para alterar o lay-out para mobile*/
+/*TODO: Confirmar qual é a media padrão pra se usar quando é pra mobile!*/
 
 @media (max-width: 699px){
   #reviews-container {
