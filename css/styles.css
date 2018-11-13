@@ -175,7 +175,7 @@ TODO: Confirmar qual é a media padrão pra ambos os casos!*/
   max-width: 100%;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -271,6 +271,12 @@ TODO: Confirmar qual é a media padrão pra ambos os casos!*/
 /*Ajustes para alterar o lay-out para desktop*/
 /*TODO: Confirmar qual é a media padrão pra se usar quando é somente pra desktops!*/
 @media(min-width: 700px){
+  #map{
+    position: absolute;
+  }
+  .filter-options{
+    margin-top: 300px;
+  }
   #restaurant-container{
     padding-left: 50%;
   }
@@ -283,11 +289,20 @@ TODO: Confirmar qual é a media padrão pra ambos os casos!*/
     width: 45%;
     margin-top: 3%;
   }
+}
+@media(min-width: 700px) and (max-width: 1009px){
   .inside #map-container{
-    height: 45%;
+    height: 34%;
     position: absolute;
   }
 }
+@media(min-width: 1010px){
+  .inside #map-container{
+    height: 40%;
+    position: absolute;
+  }
+}
+
 
 /*Ajustes para alterar o lay-out para mobile*/
 /*TODO: Confirmar qual é a media padrão pra se usar quando é pra mobile!*/
