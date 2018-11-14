@@ -105,6 +105,12 @@ nav h1 a {
   height: 300px;
   width: 100%;
   background-color: #ccc;
+  position: absolute;
+}
+#map-container{
+  height: 300px;
+  position: absolute;
+  width: 100%;
 }
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
@@ -113,6 +119,7 @@ nav h1 a {
   background-color: #3397DB;
   align-items: center;
   text-align: center;
+  padding-top: 300px;
 }
 .filter-options h2 {
   color: black;
@@ -271,12 +278,6 @@ TODO: Confirmar qual é a media padrão pra ambos os casos!*/
 /*Ajustes para alterar o lay-out para desktop*/
 /*TODO: Confirmar qual é a media padrão pra se usar quando é somente pra desktops!*/
 @media(min-width: 700px){
-  #map{
-    position: absolute;
-  }
-  .filter-options{
-    margin-top: 300px;
-  }
   #restaurant-container{
     padding-left: 50%;
   }

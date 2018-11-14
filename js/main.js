@@ -160,7 +160,6 @@ resetRestaurants = (restaurants) => {
 fillRestaurantsHTML = (restaurants = self.restaurants) => {
   const ul = document.getElementById('restaurants-list');
   restaurants.forEach(restaurant => {
-    debugger;
     ul.append(createRestaurantHTML(restaurant));
   });
   addMarkersToMap();
